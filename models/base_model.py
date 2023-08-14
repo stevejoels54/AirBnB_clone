@@ -2,6 +2,7 @@
 """Definition of the BaseModel class."""
 import uuid
 from datetime import datetime
+import models
 
 
 class BaseModel:
@@ -28,6 +29,7 @@ class BaseModel:
 
     def save(self):
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         new_dict = self.__dict__.copy()

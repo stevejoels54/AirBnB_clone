@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Definition of the BaseModel class."""
 import json
+import os
 from models.base_model import BaseModel
 
 
