@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Definition of the BaseModel class."""
 import json
-import os
 from models.base_model import BaseModel
 
 
@@ -51,6 +50,11 @@ class FileStorage:
         """
         Deserializes the JSON file to the dictionary of objects
         """
-        if os.path.exists(self.__file_path):
+        try:
             with open(self.__file_path, "r") as f:
                 self.__objects = json.load(f)
+            for key, value in self.__objects.items():
+                class_name = key.split(".")[0]
+                self.__objects[key] = eval(class_name)(**value)
+        except FileNotFoundError:
+            pass
