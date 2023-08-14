@@ -6,7 +6,17 @@ import models
 
 
 class BaseModel:
+    """Defines all attributes and methods for other classes."""
+
     def __init__(self, *args, **kwargs):
+        """Initialize the BaseModel class.
+
+        Args:
+            self (BaseModel): current instance
+            args (any): not used
+            kwargs (dict): dictionary of key/value pairs attributes
+        """
+
         if kwargs:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':
