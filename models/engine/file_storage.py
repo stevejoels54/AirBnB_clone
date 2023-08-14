@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Definition of the BaseModel class."""
 import json
 from models.base_model import BaseModel
