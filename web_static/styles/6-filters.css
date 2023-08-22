@@ -1,0 +1,179 @@
+/* 6-filters.css */
+/* .filters {
+    color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+    padding: 10px;
+}
+
+.locations {
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    float: left;
+    height: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.amenities {
+    height: 100%;
+    width: 25%;
+    float: left;
+    padding-left: 30px;
+    position: relative;
+}
+
+.locations ul,
+.amenities ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+.locations ul {
+    top: 30px;
+    left: 0;
+}
+
+.amenities ul {
+    top: 0;
+    left: 0;
+}
+
+.locations h2 {
+    font-size: 16px;
+}
+
+.locations:hover ul,
+.amenities:hover ul {
+    display: block;
+}
+
+.locations ul li,
+.amenities ul li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    border-color: #FF5A5F;
+    border-style: solid;
+    color: white;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    margin-top: 11px;
+    float: right;
+    right: 30px;
+    opacity: 1;
+}
+
+button:hover {
+    opacity: 0.9;
+} */
+
+.filters {
+    color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+}
+
+.locations {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+}
+
+.amenities {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+h3 {
+    color: black;
+    font-weight: 600;
+    margin-left: 30px;
+    line-height: 8px;
+}
+
+h4 {
+    color: black;
+    font-weight: 400;
+    line-height: 2px;
+    margin-left: 30px;
+}
+
+button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    border-color: #FF5A5F;
+    border-style: solid;
+    color: white;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    margin-top: 11px;
+    float: right;
+    right: 30px;
+    opacity: 1;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 20px;
+}
+
+li {
+    padding-bottom: 10px;
+    text-indent: 40px;
+}
+
+.locations:hover .popover {
+    display: table-cell;
+}
+
+.amenities:hover .popover {
+    display: table-cell;
+}
+
+.popover {
+    margin-top: 6px;
+    display: none;
+    position: absolute;
+    background: #FAFAFA;
+    width: 25%;
+    color: black;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    float: left;
+    padding-bottom: 30px;
+}

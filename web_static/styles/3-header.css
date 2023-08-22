@@ -1,0 +1,16 @@
+/* 3-header.css */
+header {
+    background-color: white;
+    color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header .logo {
+   content: url("../images/logo.png");
+}
